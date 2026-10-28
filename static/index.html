@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgniFlowZ | Energy Trading</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">AgniFlowZ</div>
+      <div class="stats">
+        <div class="stat"><span class="sun">☀</span><span>Gen: <b id="generation">5.2</b> kWh</span></div>
+        <div class="stat"><span class="bolt">ϟ</span><span>Con: <b id="consumption">3.1</b> kWh</span></div>
+        <div class="stat"><span class="battery">▱</span><span>Bal: <b id="balance">1000</b> AGNI</span></div>
+      </div>
+    </header>
+    <section class="columns">
+      <article class="panel monitor">
+        <h2><span class="pulse">∿</span> Real-time Monitor</h2>
+        <div class="chart-wrap"><canvas id="energyChart"></canvas></div>
+        <p class="muted small" id="modeLabel">Demo telemetry · simulated data</p>
+      </article>
+      <article class="panel actions">
+        <h2>Market Actions</h2>
+        <section class="action-card sell">
+          <h3>Sell Surplus</h3>
+          <p>Recommended Price: <strong>12.5 AGNI/kWh</strong></p>
+          <button class="green" id="sellButton">Place Sell Order</button>
+        </section>
+        <section class="action-card buy">
+          <h3>Buy Energy</h3>
+          <p>Best Offer: <strong>11.8 AGNI/kWh</strong></p>
+          <button class="blue" id="buyButton">Buy Now</button>
+        </section>
+        <div id="notice" class="notice" role="status"></div>
+        <div class="orders"><h3>Available sell orders</h3><div id="ordersList">Loading orders…</div></div>
+      </article>
+    </section>
+    <footer>AgniFlowZ · Peer-to-peer renewable energy trading prototype</footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

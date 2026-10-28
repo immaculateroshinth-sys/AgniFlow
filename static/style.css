@@ -1,0 +1,16 @@
+:root{color-scheme:dark;--bg:#111827;--panel:#202b3c;--text:#f4f6fb;--muted:#a3adbc;--green:#19a34a;--blue:#2864e8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text)}
+.app{max-width:1600px;margin:auto;padding:42px 38px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:38px}
+.brand{font-size:38px;font-weight:800;letter-spacing:-1.4px;background:linear-gradient(100deg,#4ade80,#60a5fa);color:transparent;background-clip:text}
+.stats{display:flex;gap:18px;flex-wrap:wrap}.stat{display:flex;align-items:center;gap:12px;padding:17px 20px;background:#202a3a;border-radius:12px;font-size:18px;box-shadow:0 5px 14px #080d171c}
+.stat b{font-weight:500}.sun{color:#facc15;font-size:26px}.bolt{color:#60a5fa;font-size:30px}.battery{color:#4ade80;font-size:28px}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:38px}.panel{background:var(--panel);border:1px solid #303b4d;border-radius:17px;padding:30px;min-width:0;box-shadow:0 12px 30px #0000000a}
+h2{font-size:24px;margin:3px 0 24px;font-weight:700}.pulse{font-size:29px;margin-right:7px} .chart-wrap{height:310px;position:relative}
+.action-card{border-radius:12px;padding:21px 20px 20px;margin-bottom:19px;border:1px solid #236148;background:#183431}
+.action-card h3{font-size:20px;margin:0 0 13px;color:#4ade80}.action-card p{color:var(--muted);font-size:17px;margin:0 0 11px}.action-card strong{font-weight:500}
+.action-card.buy{border-color:#2b477b;background:#1c2d4c}.action-card.buy h3{color:#60a5fa}
+button{width:100%;border:0;border-radius:10px;color:white;font-size:18px;padding:14px;cursor:pointer;transition:filter .15s,transform .15s}
+button:hover{filter:brightness(1.1)}button:active{transform:scale(.995)}button:disabled{opacity:.6;cursor:wait}.green{background:#19a34a}.blue{background:#2864e8}
+.muted{color:#9aa4b2}.small{font-size:12px;text-align:center;margin-top:12px}.notice{min-height:24px;color:#86efac;margin:8px 0 12px;overflow-wrap:anywhere}.orders{border-top:1px solid #394456;padding-top:14px}.orders h3{font-size:17px;margin:0 0 10px}.order{padding:10px 12px;background:#172233;border-radius:8px;margin:7px 0;color:#cbd5e1;font-size:14px;overflow-wrap:anywhere}
+footer{text-align:center;color:#64748b;font-size:13px;margin:28px 0 0}
+@media(max-width:1000px){.app{padding:25px 18px}.topbar{align-items:flex-start;flex-direction:column}.columns{grid-template-columns:1fr}.stats{gap:9px}.stat{font-size:15px;padding:12px}.brand{font-size:33px}.panel{padding:22px}.chart-wrap{height:280px}}
